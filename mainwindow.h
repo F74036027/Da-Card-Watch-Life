@@ -27,6 +27,7 @@ private slots:
 
     void on_foreat_clicked();
 
+    void I_catch(int);
 
 private:
     Ui::MainWindow *ui;

@@ -1,21 +1,21 @@
-#ifndef HUMAN
-#define HUMAN
-#include <iostream>
-#include <string>
-using namespace std;
+#ifndef HUMAN_H
+#define HUMAN_H
+#include <QLabel>
+#include <QString>
 
 class Human
 {
-	public:
-		Human();
-		void set_picture();
-	private:
-		int brain; // label
-		int money; // button
-		int body;  // label
-		Qlabel * brain_pic;
-		Qlabel * body_pic;
-		void set_brain_pic();
-		void set_body_pic();
+    public:
+        Human(QWidget * parent);
+        void set_picture();
+        int brain; // label
+        int money; // button
+        int body;  // label
+    private:
+        QLabel * brain_pic;
+        QLabel * body_pic;
+        void set_brain_pic();
+        void set_body_pic();
 };
-#endif
+
+#endif // HUMAN_H

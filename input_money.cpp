@@ -8,11 +8,12 @@ input_money::input_money(QWidget *parent) :
     ui(new Ui::input_money)
 {
     ui->setupUi(this);
-    Smoney="2222";
-    //ui->money->setText(Smoney);
+    Smoney="0";
+    Input_Intmoney=0;
+    ui->Textmoney->setText("");
     //Smoney=ui->money->text();
     //Imoney=Smoney.toInt();
-   // Parent = parent;
+    connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(I_click()));
 
 }
 
@@ -26,12 +27,15 @@ input_money::~input_money()
 
 void input_money::on_pushButton_clicked()
 {
-    //ui->money->setText(Smoney);
-    Smoney=ui->money->text();
 
-    Imoney=Smoney.toInt();
-    qDebug()<<Smoney<<"000";
-    //Parent->money=Imoney;
+    Input_Intmoney=Smoney.toInt();
+    Smoney=ui->Textmoney->text();
     this->close();
-    //Parent->
+
+}
+
+void input_money::I_click()
+{
+    ui->Textmoney->setText("");
+    emit For_Mainwindow(Input_Intmoney);
 }

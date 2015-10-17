@@ -1,19 +1,18 @@
-#ifndef MONEY
-#define MONEY
-#include <iostream>
-#include <string>
+#ifndef MONEY_H
+#define MONEY_H
 #include "Human.h"
-
-using namespace std;
+#include <QLabel>
+#include <QString>
 
 class Money
 {
-	public:
-		void set_intput(int, Human);
-		
-	private:
-		void formula(Human);
-		int purchase;
-		string name;
+    public:
+        void set_intput(int, Human);
+
+    private:
+        void formula(Human);
+        int purchase;
+        QString name;
 };
-#endif
+
+#endif // MONEY_H
