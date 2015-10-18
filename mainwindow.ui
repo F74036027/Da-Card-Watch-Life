@@ -17,9 +17,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>140</y>
-      <width>1081</width>
+      <x>-10</x>
+      <y>190</y>
+      <width>1101</width>
       <height>641</height>
      </rect>
     </property>
@@ -33,8 +33,8 @@
    <widget class="QPushButton" name="garbage">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>580</y>
+      <x>50</x>
+      <y>610</y>
       <width>441</width>
       <height>201</height>
      </rect>
@@ -58,11 +58,14 @@
    <widget class="QPushButton" name="library">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>240</y>
+      <x>650</x>
+      <y>310</y>
       <width>161</width>
       <height>191</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/location.png);</string>
@@ -74,11 +77,14 @@
    <widget class="QPushButton" name="ground">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>140</y>
+      <x>60</x>
+      <y>200</y>
       <width>141</width>
       <height>171</height>
      </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/location.png);</string>
@@ -96,6 +102,9 @@
       <height>191</height>
      </rect>
     </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/location.png);</string>
     </property>
@@ -106,29 +115,93 @@
    <widget class="QPushButton" name="buttom_body">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>20</y>
-      <width>151</width>
-      <height>91</height>
+      <x>460</x>
+      <y>10</y>
+      <width>141</width>
+      <height>111</height>
      </rect>
     </property>
-    <property name="text">
-     <string>money</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="money">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>70</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/wallet.png);</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="money">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>130</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 26pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1081</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Sky.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="body">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>171</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="brain">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>10</y>
+      <width>171</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>garbage</zorder>
+   <zorder>library</zorder>
+   <zorder>ground</zorder>
+   <zorder>foreat</zorder>
+   <zorder>buttom_body</zorder>
+   <zorder>money</zorder>
+   <zorder>body</zorder>
+   <zorder>brain</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

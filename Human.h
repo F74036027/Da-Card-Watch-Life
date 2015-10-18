@@ -11,9 +11,10 @@ class Human
         int brain; // label
         int money; // button
         int body;  // label
-    private:
         QLabel * brain_pic;
         QLabel * body_pic;
+    private:
+
         void set_brain_pic();
         void set_body_pic();
 };

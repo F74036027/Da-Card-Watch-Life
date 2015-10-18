@@ -14,10 +14,18 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    input_money.cpp
+    input_money.cpp \
+    Human.cpp \
+    Money.cpp \
+    health.cpp \
+    know.cpp
 
 HEADERS  += mainwindow.h \
-    input_money.h
+    input_money.h \
+    Human.h \
+    Money.h \
+    know.h \
+    health.h
 
 FORMS    += mainwindow.ui \
     input_money.ui

@@ -3,5 +3,22 @@
         <file>map.png</file>
         <file>empty.png</file>
         <file>location.png</file>
+        <file>Sky.jpg</file>
+        <file>wallet.png</file>
+        <file>body0.png</file>
+        <file>body1.png</file>
+        <file>body2.png</file>
+        <file>body3.png</file>
+        <file>body4.png</file>
+        <file>body5.png</file>
+        <file>body6.png</file>
+        <file>body7.png</file>
+        <file>body8.png</file>
+        <file>body9.png</file>
+        <file>brain0.png</file>
+        <file>brain1.png</file>
+        <file>brain2.png</file>
+        <file>brain3.png</file>
+        <file>brain4.png</file>
     </qresource>
 </RCC>
